@@ -21,4 +21,16 @@ npm start
 
 Navigate to [http://localhost:3000](http://localhost:3000)
 
+To run tests:
+
+```bash
+npm run test
+```
+
+continuous tests:
+
+```bash
+npm run watch:test
+```
+
 

@@ -9,3 +9,16 @@ For a little more background until we get a project page up [go here](http://www
 
 ## Installing Spyglass
 
+## Developing Spyglass
+
+Install NPM dependancies
+
+```bash
+npm install typings webpack-dev-server rimraf webpack -g
+npm install
+npm start
+```
+
+Navigate to [http://localhost:3000](http://localhost:3000)
+
+

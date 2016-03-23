@@ -42,9 +42,6 @@ import {AppState} from './app.service';
           <li router-active>
             <a [routerLink]=" ['Home'] ">Home</a>
           </li>
-          <li router-active>
-            <a [routerLink]=" ['About'] ">About</a>
-          </li>
         </ul>
       </nav>
     </header>
@@ -65,9 +62,7 @@ import {AppState} from './app.service';
 })
 @RouteConfig([
   { path: '/',      name: 'Index', component: Home, useAsDefault: true },
-  { path: '/home',  name: 'Home',  component: Home },
-  // Async load a component using Webpack's require with es6-promise-loader and webpack `require`
-  { path: '/about', name: 'About', loader: () => require('es6-promise!./about')('About') },
+  { path: '/home',  name: 'Home',  component: Home }
 ])
 export class App {
   angularclassLogo = 'assets/img/angularclass-avatar.png';

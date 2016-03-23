@@ -15,7 +15,7 @@ import {ENV_PROVIDERS} from './platform/environment';
 * our top level component that holds all of our components
 */
 import {AppState} from './app/app.service';
-import {App} from './app/app';
+import {Spyglass} from './app/spyglass';
 
 /*
  * Bootstrap our Angular app with a top level component `App` and inject
@@ -27,7 +27,7 @@ export function main(initialState = {}) {
     AppState
   ];
 
-  return bootstrap(App, [
+  return bootstrap(Spyglass, [
     ...ENV_PROVIDERS,
     ...PROVIDERS,
     ...DIRECTIVES,

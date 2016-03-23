@@ -7,7 +7,7 @@ import {Component, Input, Output} from 'angular2/core';
 
 @Component({
   selector: 'searchInput',
-  template: '<input type="text" [(ngModel)]="value"> {{value}}'
+  template: '<input type="text" [(ngModel)]="value">'
 })
 
 export class SearchInput {

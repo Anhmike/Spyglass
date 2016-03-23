@@ -3,12 +3,14 @@ export class Query {
   searchParams = new SearchParams;
   searchState = new SearchState;
 }
-class SearchResults {
-  searchedFor = '';
-  documentCount = 0;
-  documents = [];
+export class SearchResults {
+  constructor(
+    public searchedFor: string = '',
+    public documentCount: number = 0,
+    public documents: Array<Object> = []
+  ){}
 }
-class SearchParams {
+export class SearchParams {
   inputValue = '';
   resultsPage = 0;
   resultsPageSize = 10;

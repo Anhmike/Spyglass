@@ -16,13 +16,12 @@ Spyglass provides a simple search interface for your search engine.
 - Autocomplete
 - Filter groups
 
-- Ability to have multiple inputs or result lists
-- Extensible data model allows adding more search engine endpoints.
+- The ability to have multiple inputs or result lists
+- An extensible data model allows adding more search engine endpoints
 
 For a little more background until we get a project page up [go here](http://www.opensourceconnections.com/2013/08/28/investing-in-client-side-search/).
 
 # Trying Spyglass
-
 
 # Developing Spyglass
 

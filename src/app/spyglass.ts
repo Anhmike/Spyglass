@@ -7,7 +7,7 @@ import {ResultsHeader} from './search/components/resultsHeader'
 
 @Component({
   selector: 'spyglass',
-  template: '<searchInput></searchInput><sgSubmit></sgSubmit><sgResultsHeader></sgResultsHeader>',
+  template: require('./spyglass.html'),
   directives: [SearchInput, SearchSubmit, ResultsHeader]
 })
 

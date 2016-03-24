@@ -1,0 +1,38 @@
+spyglass {
+  
+  * {
+    box-sizing: border-box;
+  }
+
+  searchinput,
+  sgsubmit,
+  sgresultheader {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 10px 0;
+  }
+  
+  sgresultheader {
+    clear: both;
+  }
+  
+  inputcontainer {
+    overflow: auto;
+    clear: both;
+  }
+  input, button {
+    float: left;
+    line-height: 1.2rem;
+  }
+  input {
+    width: 80%;
+    border: 1px solid #eee;
+    padding: 4px;
+  }  
+  button {
+    background: green;
+    color: #fff;
+    border: none;
+  }
+}

@@ -8,6 +8,10 @@ import {ResultsHeader} from './search/components/resultsHeader'
 @Component({
   selector: 'spyglass',
   template: require('./spyglass.html'),
+  styles: [
+    require('./spyglass.scss')
+  ],
+  encapsulation: ViewEncapsulation.None,
   directives: [SearchInput, SearchSubmit, ResultsHeader]
 })
 

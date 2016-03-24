@@ -11,5 +11,4 @@ import {Component, Input, Output} from 'angular2/core';
 })
 
 export class SearchSubmit {
-  @Input() value: string;
 }

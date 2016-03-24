@@ -18,7 +18,7 @@ var ForkCheckerPlugin = require('awesome-typescript-loader').ForkCheckerPlugin;
 const ENV = process.env.ENV = process.env.NODE_ENV = 'development';
 const HMR = helpers.hasProcessFlag('hot');
 const METADATA = {
-  title: 'Angular2 Webpack Starter by @gdi2990 from @AngularClass',
+  title: 'Spyglass search app',
   baseUrl: '/',
   host: 'localhost',
   port: 3000,
@@ -169,6 +169,14 @@ module.exports = {
       //
       // See: https://github.com/webpack/raw-loader
       {test: /\.html$/, loader: 'raw-loader', exclude: [helpers.root('src/index.html')]},
+      
+      // Loader for .scss
+      // See https://github.com/AngularClass/angular2-webpack-starter/wiki/How-to-include-SCSS-in-components
+      {
+        test: /\.scss$/,
+        exclude: /node_modules/,
+        loaders: ['raw-loader', 'sass-loader'] // sass-loader not scss-loader
+      }
 
     ]
 
